@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Research portfolio of Sushree Sangita Sahoo — Chemistry, nanomaterials, biosensing, catalysis and computational chemistry.">
+<title>Sushree Sangita Sahoo | Research Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#14251f;--muted:#61716b;--paper:#f7f8f4;--white:#fff;--green:#1f6b53;--mint:#dcefe5;--line:#e1e8e2;--gold:#d7a94b}
+*{box-sizing:border-box;scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:"DM Sans",sans-serif;line-height:1.65}
+a{color:inherit;text-decoration:none}
+.wrap{width:min(1120px,91%);margin:auto}
+nav{display:flex;align-items:center;justify-content:space-between;padding:22px 0;gap:20px}
+.logo{font-family:Manrope,sans-serif;font-weight:800;letter-spacing:-.04em;font-size:1.12rem}
+.logo span{color:var(--green)}
+.navlinks{display:flex;gap:24px;flex-wrap:wrap;font-size:.91rem;color:var(--muted)}
+.navlinks a:hover{color:var(--green)}
+.hero{padding:78px 0 82px;display:grid;grid-template-columns:1.5fr .8fr;gap:56px;align-items:center}
+.eyebrow{display:inline-flex;align-items:center;gap:9px;text-transform:uppercase;letter-spacing:.13em;font-size:.75rem;font-weight:700;color:var(--green)}
+.dot{width:8px;height:8px;border-radius:50%;background:var(--gold);display:inline-block}
+h1,h2,h3{font-family:Manrope,sans-serif;line-height:1.15;letter-spacing:-.04em}
+h1{font-size:clamp(2.7rem,6vw,5.15rem);margin:19px 0 22px;max-width:760px}
+h1 em{font-style:normal;color:var(--green)}
+.lead{font-size:1.13rem;color:var(--muted);max-width:670px}
+.actions{display:flex;gap:13px;flex-wrap:wrap;margin-top:30px}
+.btn{padding:12px 19px;border-radius:8px;font-weight:700;font-size:.92rem;display:inline-block;border:1px solid var(--green);transition:.2s}
+.btn.primary{background:var(--green);color:white}.btn.primary:hover{background:#174d3c}
+.btn.secondary{color:var(--green)}.btn.secondary:hover{background:var(--mint)}
+.hero-card{background:var(--ink);color:white;padding:30px;border-radius:18px;position:relative;overflow:hidden;min-height:315px;display:flex;flex-direction:column;justify-content:space-between}
+.hero-card:after{content:"";position:absolute;width:230px;height:230px;border:1px solid #78968a;border-radius:50%;right:-90px;top:-75px;box-shadow:0 0 0 24px #ffffff08,0 0 0 48px #ffffff06}
+.card-kicker{font-size:.75rem;text-transform:uppercase;letter-spacing:.13em;color:#b5d5c7}
+.hero-card h2{font-size:2rem;max-width:260px;margin:18px 0}
+.tags{display:flex;flex-wrap:wrap;gap:8px;position:relative;z-index:1}
+.tag{border:1px solid #ffffff40;border-radius:100px;padding:6px 10px;font-size:.77rem;color:#e2eee8}
+section{padding:72px 0;border-top:1px solid var(--line)}
+.section-head{display:flex;justify-content:space-between;align-items:end;gap:24px;margin-bottom:32px}
+.section-head h2{font-size:clamp(2rem,4vw,3rem);margin:8px 0 0}
+.section-head p{max-width:430px;color:var(--muted);margin:0}
+.kicker{font-size:.76rem;text-transform:uppercase;letter-spacing:.15em;color:var(--green);font-weight:700}
+.about-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:42px}
+.about-copy{font-size:1.06rem;color:#46574f}
+.stat-grid{display:grid;grid-template-columns:1fr 1fr;gap:13px}
+.stat{background:var(--white);padding:22px;border:1px solid var(--line);border-radius:12px}
+.stat strong{display:block;font-family:Manrope,sans-serif;font-size:1.4rem;color:var(--green)}
+.stat span{font-size:.86rem;color:var(--muted)}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:17px}
+.card{background:white;border:1px solid var(--line);border-radius:13px;padding:24px;transition:transform .2s,box-shadow .2s}
+.card:hover{transform:translateY(-4px);box-shadow:0 12px 28px #173d2a0d}
+.card .num{font-size:.78rem;font-weight:700;color:var(--green);letter-spacing:.12em}
+.card h3{font-size:1.22rem;margin:13px 0 10px}
+.card p{color:var(--muted);font-size:.94rem;margin:0}
+.pillrow{display:flex;gap:7px;flex-wrap:wrap;margin-top:17px}
+.pill{font-size:.75rem;background:var(--mint);color:#225b47;padding:5px 9px;border-radius:100px}
+.timeline{display:grid;gap:18px}
+.role{display:grid;grid-template-columns:220px 1fr;gap:30px;background:white;border:1px solid var(--line);border-radius:13px;padding:25px}
+.role-date{color:var(--green);font-size:.82rem;font-weight:700}
+.role h3{margin:5px 0 7px;font-size:1.25rem}
+.org{color:var(--muted);font-size:.92rem}
+.role ul{padding-left:19px;margin:14px 0 0;color:#526159}
+.role li{margin:6px 0}
+.education{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.edu{padding:24px;border-left:3px solid var(--green);background:white;border-radius:0 12px 12px 0}
+.edu h3{margin:8px 0;font-size:1.15rem}
+.edu p{margin:5px 0;color:var(--muted);font-size:.92rem}
+.skills-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}
+.skill{padding:20px;background:white;border:1px solid var(--line);border-radius:12px}
+.skill h3{font-size:1.02rem;margin:0 0 12px}
+.skill p{margin:0;color:var(--muted);font-size:.9rem}
+.achievement-list{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.achievement{background:var(--mint);padding:17px 19px;border-radius:10px;font-weight:600;font-size:.94rem}
+.contact{background:var(--ink);color:white;border-radius:18px;padding:42px;display:grid;grid-template-columns:1.2fr .8fr;gap:25px;align-items:center}
+.contact h2{font-size:clamp(2rem,4vw,3rem);margin:10px 0}
+.contact p{color:#c0d0c8;max-width:540px}
+.contact-links{display:grid;gap:12px}
+.contact-links a{border:1px solid #ffffff40;border-radius:9px;padding:12px 14px;color:#f0f6f2;overflow-wrap:anywhere}
+.contact-links a:hover{background:#ffffff12}
+footer{padding:26px 0;color:var(--muted);font-size:.82rem;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.note{font-size:.83rem;color:var(--muted);margin-top:18px}
+@media(max-width:800px){.hero{grid-template-columns:1fr;padding:52px 0}.hero-card{min-height:260px}.about-grid,.contact{grid-template-columns:1fr}.cards,.skills-grid{grid-template-columns:1fr 1fr}.section-head{align-items:start;flex-direction:column}.role{grid-template-columns:1fr;gap:8px}}
+@media(max-width:540px){.navlinks{gap:12px;font-size:.82rem}.navlinks a:nth-child(3){display:none}.cards,.skills-grid,.education,.achievement-list{grid-template-columns:1fr}.contact{padding:27px}.role{padding:20px}section{padding:52px 0}}
+</style>
+</head>
+<body>
+<header class="wrap">
+  <nav aria-label="Main navigation">
+    <a class="logo" href="#home">SSS<span>.</span></a>
+    <div class="navlinks">
+      <a href="#about">About</a><a href="#research">Research</a><a href="#experience">Experience</a><a href="#skills">Skills</a><a href="#contact">Contact</a>
+    </div>
+  </nav>
+</header>
+<main>
+  <div class="wrap hero" id="home">
+    <div>
+      <div class="eyebrow"><span class="dot"></span> Chemistry · Materials · Biosensing</div>
+      <h1>Sushree Sangita <em>Sahoo</em></h1>
+      <p class="lead">Early-career researcher exploring functional materials, nanotechnology, biosensing platforms, catalysis and computational chemistry.</p>
+      <div class="actions">
+        <a class="btn primary" href="#research">Explore my research ↘</a>
+        <a class="btn secondary" href="https://www.linkedin.com/in/sushree-sangita-sahoo-59803b208/" target="_blank" rel="noopener">Connect on LinkedIn ↗</a>
+      </div>
+    </div>
+    <aside class="hero-card">
+      <div>
+        <div class="card-kicker">Research focus</div>
+        <h2>Turning molecular insight into material solutions.</h2>
+      </div>
+      <div class="tags"><span class="tag">Nanomaterials</span><span class="tag">Hydrogels</span><span class="tag">Electrochemistry</span><span class="tag">DFT</span></div>
+    </aside>
+  </div>
+
+  <section id="about"><div class="wrap">
+    <div class="section-head"><div><div class="kicker">01 / About</div><h2>Curiosity, chemistry<br>and applied research.</h2></div><p>My work connects synthesis and characterization with functional applications in sensing, catalysis and advanced materials.</p></div>
+    <div class="about-grid">
+      <div class="about-copy">
+        <p>I hold an MSc in Chemistry from Sister Nivedita University, Kolkata, and a BSc in Chemistry from Rama Devi Women's University, Bhubaneswar. My research experience spans hydrogel-based sensing platforms, metal-containing nanomaterials, carbon quantum dots and electrochemical studies.</p>
+        <p>I enjoy combining experimental chemistry with data interpretation and computational approaches to understand material properties and explore their potential applications. I am particularly interested in interdisciplinary research at the interface of chemistry, materials science and bioengineering.</p>
+      </div>
+      <div class="stat-grid">
+        <div class="stat"><strong>MSc</strong><span>Chemistry · 2023–2025</span></div>
+        <div class="stat"><strong>3</strong><span>Research internship/project experiences listed in my CV</span></div>
+        <div class="stat"><strong>DFT</strong><span>Molecular modelling and electronic structure</span></div>
+        <div class="stat"><strong>R&D</strong><span>Materials, sensing and catalysis</span></div>
+      </div>
+    </div>
+  </div></section>
+
+  <section id="research"><div class="wrap">
+    <div class="section-head"><div><div class="kicker">02 / Research themes</div><h2>What I’m exploring.</h2></div><p>Research interests shaped by hands-on laboratory work and an interdisciplinary chemistry background.</p></div>
+    <div class="cards">
+      <article class="card"><div class="num">01 — MATERIALS</div><h3>Functional Materials & Nanotechnology</h3><p>Polymer hydrogels, nanocomposites and structure–property relationships for emerging material applications.</p><div class="pillrow"><span class="pill">PVA/CMC hydrogels</span><span class="pill">Nanocomposites</span></div></article>
+      <article class="card"><div class="num">02 — SENSING</div><h3>Biosensors & Electrochemistry</h3><p>Hydrogel-based sensing platforms, conductive materials and SERS-oriented approaches for biomarker detection.</p><div class="pillrow"><span class="pill">CV / EIS / DPV</span><span class="pill">SERS</span></div></article>
+      <article class="card"><div class="num">03 — COMPUTATION</div><h3>Computational Chemistry</h3><p>DFT calculations, molecular geometry optimization and electronic-property analysis to support materials research.</p><div class="pillrow"><span class="pill">DFT</span><span class="pill">Molecular modelling</span></div></article>
+      <article class="card"><div class="num">04 — CATALYSIS</div><h3>Bioinorganic & Electrocatalysis</h3><p>Metal-containing materials, catalytic activity and electrochemical behaviour, including hydrogen evolution research.</p><div class="pillrow"><span class="pill">FeSe₂/rGO</span><span class="pill">HER</span></div></article>
+      <article class="card"><div class="num">05 — OPTICAL MATERIALS</div><h3>Carbon Quantum Dots</h3><p>Synthesis of red-emissive carbon quantum dots and investigation of how small-molecule additives influence optical properties.</p><div class="pillrow"><span class="pill">Fluorescence</span><span class="pill">Photoluminescence</span></div></article>
+      <article class="card"><div class="num">06 — MOLECULAR SCIENCE</div><h3>Bioinorganic Chemistry</h3><p>Growing interests in metalloenzymes, metal-mediated catalysis, enzymatic mechanisms and natural-product biosynthesis.</p><div class="pillrow"><span class="pill">Catalytic mechanisms</span><span class="pill">Spectroscopy</span></div></article>
+    </div>
+  </div></section>
+
+  <section id="experience"><div class="wrap">
+    <div class="section-head"><div><div class="kicker">03 / Research experience</div><h2>Learning by doing.</h2></div><p>Selected research roles and laboratory projects from my academic journey.</p></div>
+    <div class="timeline">
+      <article class="role">
+        <div><div class="role-date">MAY 2026 – PRESENT</div><h3>Project Research Intern</h3><div class="org">Bio-Sensors and Informatics Lab<br>Indian Institute of Technology Guwahati</div></div>
+        <div><ul><li>Working on PVA/CMC-based hydrogels for biosensing platforms and non-invasive biomarker detection.</li><li>Performing DFT simulations, including molecular geometry optimization, HOMO–LUMO analysis and electronic-property calculations.</li><li>Contributing to projects involving conductive hydrogel sensors and SERS-based sensing platforms for uric acid detection.</li></ul></div>
+      </article>
+      <article class="role">
+        <div><div class="role-date">DEC 2025 – APR 2026</div><h3>Research Intern</h3><div class="org">Bioinorganic and Organometallic Lab<br>National Institute of Technology Rourkela</div></div>
+        <div><ul><li>Synthesized FeSe₂ nanoparticles using a single-source molecular precursor approach.</li><li>Fabricated FeSe₂/rGO nanocomposites and studied composition-related catalytic and electrochemical behaviour.</li><li>Used FTIR, XRD, Raman spectroscopy, FESEM, EDX and FETEM for structural and morphological characterization.</li><li>Evaluated catalytic activity toward the hydrogen evolution reaction under neutral and alkaline conditions.</li></ul></div>
+      </article>
+      <article class="role">
+        <div><div class="role-date">JAN 2025 – MAY 2025</div><h3>Project Intern</h3><div class="org">Masoja Techno Solution Private Limited<br>Under Sister Nivedita University supervision</div></div>
+        <div><ul><li>Synthesized red-emissive carbon quantum dots using a one-step solvothermal method.</li><li>Investigated the influence of salicylic acid and arginine additives on fluorescence characteristics.</li><li>Performed photoluminescence and dynamic light scattering characterization.</li></ul></div>
+      </article>
+    </div>
+  </div></section>
+
+  <section id="education"><div class="wrap">
+    <div class="section-head"><div><div class="kicker">04 / Education</div><h2>Academic foundation.</h2></div></div>
+    <div class="education">
+      <article class="edu"><div class="kicker">2023–2025</div><h3>Master of Science — Chemistry</h3><p>Sister Nivedita University, Kolkata</p><p><strong>CGPA:</strong> 7.41</p><p><strong>Thesis:</strong> “One Step Synthesis of Red Emissive Carbon Quantum Dots and Exploring the Role of Small Molecule Additives on their Optical Properties.”</p></article>
+      <article class="edu"><div class="kicker">2020–2023</div><h3>Bachelor of Science — Chemistry</h3><p>Rama Devi Women's University, Bhubaneswar</p><p><strong>CGPA:</strong> 8.32</p><p><strong>Dissertation:</strong> Green Chemistry — Principles and Applications.</p></article>
+    </div>
+  </div></section>
+
+  <section id="skills"><div class="wrap">
+    <div class="section-head"><div><div class="kicker">05 / Technical toolkit</div><h2>Methods & skills.</h2></div><p>A selection of techniques and tools listed in my CV.</p></div>
+    <div class="skills-grid">
+      <article class="skill"><h3>Spectroscopy & optical analysis</h3><p>UV–Vis, FTIR, NMR, fluorescence, Raman spectroscopy, photoluminescence.</p></article>
+      <article class="skill"><h3>Materials characterization</h3><p>XRD, SEM, TEM, EDS/EDX, DLS, BET surface-area analysis.</p></article>
+      <article class="skill"><h3>Electrochemical methods</h3><p>Cyclic voltammetry (CV), electrochemical impedance spectroscopy (EIS), differential pulse voltammetry (DPV).</p></article>
+      <article class="skill"><h3>Synthesis & laboratory methods</h3><p>Hydrothermal synthesis, solvothermal synthesis, catalysis, chromatography, centrifugation and organic coupling reactions.</p></article>
+      <article class="skill"><h3>Computational chemistry</h3><p>Gaussian, GAMESS, Avogadro, Schrödinger Maestro, ChemDraw, DFT calculations and molecular modelling.</p></article>
+      <article class="skill"><h3>Data & scientific communication</h3><p>Origin/OriginPro, scientific visualization, figure preparation, technical documentation, MS Office and C/C++ basics.</p></article>
+    </div>
+  </div></section>
+
+  <section id="highlights"><div class="wrap">
+    <div class="section-head"><div><div class="kicker">06 / Highlights</div><h2>Milestones.</h2></div></div>
+    <div class="achievement-list">
+      <div class="achievement">Second position — University-level oral presentation (2025)</div>
+      <div class="achievement">Best Seminar Presentation Award in Green Chemistry (2022)</div>
+      <div class="achievement">Qualified CPET Odisha — State Rank 800</div>
+      <div class="achievement">Top 10 school ranking — 5th position</div>
+      <div class="achievement">Workshops on nanomaterial fabrication and characterization</div>
+      <div class="achievement">IP Awareness/Training Program — National Intellectual Property Awareness Mission, IIT Guwahati</div>
+    </div>
+    <p class="note">Languages: English, Hindi, Odia and German.</p>
+  </div></section>
+
+  <section id="contact"><div class="wrap">
+    <div class="contact">
+      <div><div class="kicker" style="color:#a8d9c4">07 / Contact</div><h2>Let’s connect and collaborate.</h2><p>I’m interested in research opportunities and scientific conversations across chemistry, nanomaterials, biosensing and computational materials science.</p></div>
+      <div class="contact-links">
+        <a href="mailto:sushreesahoo11@gmail.com">✉ sushreesahoo11@gmail.com</a>
+        <a href="https://www.linkedin.com/in/sushree-sangita-sahoo-59803b208/" target="_blank" rel="noopener">↗ LinkedIn profile</a>
+        <a href="#home">↑ Back to top</a>
+      </div>
+    </div>
+  </div></section>
+</main>
+<footer class="wrap"><span>© <span id="year"></span> Sushree Sangita Sahoo</span><span>Personal research portfolio · Built with HTML & CSS</span></footer>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
